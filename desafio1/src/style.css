@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrossel {
+    position: relative;
+    height: 100%;
+    background-color: #C50000;
+}
+
+.quadro_informacoes {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 137px;
+    left: 134px;
+    height: 460px;
+    width: 374px;
+}
+
+.quadro_informacoes h2 {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.quadro_informacoes p {
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.quadro_informacoes a {
+    color: #C50000;
+    font-weight: 700;
+}
+
+.seta-de-avancar, .seta-de-voltar {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+}
+
+.seta-de-avancar {
+    right: 0;
+}
+
+.seta-de-voltar {
+    transform: rotate(180deg);
+}
