@@ -44,6 +44,18 @@ body {
     font-weight: 700;
 }
 
+.carrossel2 .quadro_informacoes a{
+    color: #D9DD10;
+}
+
+.carrossel3 .quadro_informacoes a{
+    color: #A63A17;
+}
+
+.carrossel4 .quadro_informacoes a{
+    color: #10ACDD;
+}
+
 .carrossel1, .carrossel2, .carrossel3, .carrossel4{
     position: relative;
 }
