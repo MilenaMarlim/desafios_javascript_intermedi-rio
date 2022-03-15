@@ -3,11 +3,17 @@ let setaVoltar = document.getElementById('seta-de-voltar');
 let setaAvancar = document.getElementById('seta-de-avancar');
 let carrosselImagens = document.querySelectorAll('.slide');
 
+// console.log(setaAvancar)
+// console.log(setaVoltar)
+// console.log(carrosselImagens)
+
 let slideAtual = 0;
+
 
 setaAvancar.addEventListener('click', function(){
 
-    const totalDeSlides = carrosselImagens.lenght -1;
+    const totalDeSlides = carrosselImagens.length;
+    console.log(totalDeSlides)
 
     if(slideAtual === totalDeSlides){
         return;
@@ -19,7 +25,7 @@ setaAvancar.addEventListener('click', function(){
         slide.classList.remove('aberto')
     });
 
-    carrosselImagens[slideAtual].classList.add('.aberto')
+    carrosselImagens[slideAtual].classList.add('aberto')
     // setaVoltar.style.opacity = '80%'
 });
 
