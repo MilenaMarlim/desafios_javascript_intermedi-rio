@@ -1,21 +1,43 @@
 
-let setaVoltar = document.getElementsByClassName('seta-de-voltar')
-let setaAvancar = document.getElementsByClassName('seta-de-avancar')
+let setaVoltar = document.getElementById('seta-de-voltar');
+let setaAvancar = document.getElementById('seta-de-avancar');
+let carrosselImagens = document.querySelectorAll('.slide');
 
-let carrosselPrincipal = document.getElementsByClassName('principal')
+let slideAtual = 0;
 
-let carrosselImagens = document.getElementsByClassName('imagens_gerais')
+setaAvancar.addEventListener('click', function(){
 
-function passarImagem(){
-    if carrosselPrincipal === 1{
+    const totalDeSlides = carrosselImagens.lenght -1;
 
-    }else{
-        return
+    if(slideAtual === totalDeSlides){
+        return;
     }
 
-}
+    slideAtual++;
 
-passarImagem.addEventListener ('change', function(){
-    for(i = 1, i<5, i++){
-        
-    } 
+    carrosselImagens.forEach(slide => {
+        slide.classList.remove('aberto')
+    });
+
+    carrosselImagens[slideAtual].classList.add('.aberto')
+    // setaVoltar.style.opacity = '80%'
+});
+
+setaVoltar.addEventListener('click', function(){
+    
+
+    if(slideAtual === 0){
+       console.log('não tem mais como voltar')
+       return;
+    }
+
+    slideAtual--;
+
+    carrosselImagens.forEach(slide => {
+        slide.classList.remove('.aberto')
+    });
+
+    carrosselImagens[slideAtual].classList.add('aberto')
+    // setaVoltar.style.opacity = '80%'
+});
+
