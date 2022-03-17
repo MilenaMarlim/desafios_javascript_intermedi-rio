@@ -3,21 +3,18 @@ let setaVoltar = document.getElementById('seta-de-voltar');
 let setaAvancar = document.getElementById('seta-de-avancar');
 let carrosselImagens = document.querySelectorAll('.slide');
 
-// console.log(setaAvancar)
-// console.log(setaVoltar)
-// console.log(carrosselImagens)
-
 let slideAtual = 0;
 
 
-setaAvancar.addEventListener('click', function(){
+setaAvancar.addEventListener('click', function () {
 
-    const totalDeSlides = carrosselImagens.length;
-    console.log(totalDeSlides)
+    const totalDeSlides = carrosselImagens.length -1;
 
-    if(slideAtual === totalDeSlides){
+    if (slideAtual === totalDeSlides) {
+        console.log('Ultimo slide')
+        setaAvancar.style.opacity = 0.8
         return;
-    }
+    }  
 
     slideAtual++;
 
@@ -26,15 +23,17 @@ setaAvancar.addEventListener('click', function(){
     });
 
     carrosselImagens[slideAtual].classList.add('aberto')
-    // setaVoltar.style.opacity = '80%'
+
 });
 
-setaVoltar.addEventListener('click', function(){
-    
+setaVoltar.addEventListener('click', function () {
 
-    if(slideAtual === 0){
-       console.log('não tem mais como voltar')
-       return;
+    setaAvancar.style.opacity = 1
+
+    if (slideAtual === 0) {
+        console.log('não tem mais como voltar')
+        setaVoltar.style.opacity = 0.8
+        return;
     }
 
     slideAtual--;
@@ -44,6 +43,5 @@ setaVoltar.addEventListener('click', function(){
     });
 
     carrosselImagens[slideAtual].classList.add('aberto')
-    // setaVoltar.style.opacity = '80%'
 });
 
