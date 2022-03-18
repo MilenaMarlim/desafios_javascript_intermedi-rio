@@ -69,6 +69,7 @@ body {
 .pergunta-e-resposta{
     width: 100%;
 }
+
 .pergunta-e-resposta.ativo{
     background-image: url(../images/seta-colorida.png);
     background-size: 12px;
@@ -93,21 +94,3 @@ body {
     display: none;
 }
 
-/* .seta-ativa, .seta-inativa {
-    width: 15%;
-    cursor: pointer;
-} */
-
-/* .setas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-.seta-inativa{
-    display: none;
-}
-
-.seta-ativa{
-    display: block;
-} */
