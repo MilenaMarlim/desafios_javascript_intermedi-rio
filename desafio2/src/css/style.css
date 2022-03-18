@@ -66,6 +66,23 @@ body {
     margin-right: 20px;
 }
 
+.pergunta-e-resposta{
+    width: 100%;
+}
+.pergunta-e-resposta.ativo{
+    background-image: url(../images/seta-colorida.png);
+    background-size: 12px;
+    background-position: top 8px right 10px;
+    background-repeat: no-repeat;
+}
+
+.pergunta-e-resposta{
+    background-image: url(../images/seta.png);
+    background-size: 12px;
+    background-position: top 8px right 10px;
+    background-repeat: no-repeat;
+}
+
 .pacote-pergunta:last-child{
     border-bottom: none;
 }
@@ -76,12 +93,12 @@ body {
     display: none;
 }
 
-.seta-ativa, .seta-inativa {
+/* .seta-ativa, .seta-inativa {
     width: 15%;
     cursor: pointer;
-}
+} */
 
-.setas{
+/* .setas{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,4 +110,4 @@ body {
 
 .seta-ativa{
     display: block;
-}
+} */
