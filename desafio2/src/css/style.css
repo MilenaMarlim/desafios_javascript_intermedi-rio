@@ -47,11 +47,6 @@ body {
     font-size: 17px;
 }
 
-.pergunta-e-resposta{
-    display: flex;
-    justify-content: flex-start;
-}
-
 .questionario{
     width: 550px;
     margin-left: 220px;
@@ -66,31 +61,43 @@ body {
     margin-right: 20px;
 }
 
-.pergunta-e-resposta{
+.pacote-pergunta .pergunta{
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-}
-
-.pergunta-e-resposta.ativo{
-    background-image: url(../images/seta-colorida.png);
-    background-size: 12px;
-    background-position: top 8px right 10px;
-    background-repeat: no-repeat;
-}
-
-.pergunta-e-resposta{
     background-image: url(../images/seta.png);
     background-size: 12px;
     background-position: top 8px right 10px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .pacote-pergunta:last-child{
     border-bottom: none;
 }
 
-.resposta {
+.quadro .pacote-pergunta .resposta {
     font-weight: 300;
     font-size: 15px;
     display: none;
+    padding-top: 10px;
+}
+
+.quadro .pacote-pergunta.ativado .resposta{
+    display: block;
+    background-size: 12px;
+    background-position: top 8px right 10px;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+.pacote-pergunta.ativado .pergunta{
+    background-image: url(../images/seta-colorida.png);
+}
+
+.pacote-pergunta.ativado{
+    display: flex;
+    flex-direction: column;
 }
 

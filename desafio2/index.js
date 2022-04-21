@@ -1,19 +1,13 @@
-const pacotesPerguntasERespostas = document.querySelectorAll('.pergunta-e-resposta')
+const quadro = document.querySelectorAll('.pacote-pergunta');
 
-selecaoPerguntas.forEach(function(pergunta) =>{
-    pergunta.addEventListener('click',function ()=>{
+quadro.forEach(function (pacotePergunta){
 
-        perguntaAberta.classList.remove('ativo')
+    pacotePergunta.addEventListener('click', function () {
+        
+        const pacoteAtivadoAtual = document.querySelector('.ativado');
 
-        selecaoPerguntas.forEach(function (pergunta){
-            pergunta.classList.remove('ativo')
-        })
+        pacoteAtivadoAtual.classList.remove('ativado');
 
-        if(!itemAtivo){
-             pergunta.classList.add('ativo)           
-        } else {
-            pergunta.classList.remove('ativo')
-        }
+        pacotePergunta.classList.add('ativado');       
     })
-
-})
+});
