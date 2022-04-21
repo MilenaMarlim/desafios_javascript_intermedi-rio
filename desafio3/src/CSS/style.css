@@ -14,6 +14,11 @@ body{
     align-items: center;
 }
 
+.texto{
+    width: 600px;
+    margin-right: 10%;
+}
+
 .informativo_formulario h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -21,6 +26,7 @@ body{
     color: #ffffff;
     line-height: 23,44;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .informativo_formulario h2{
@@ -34,6 +40,8 @@ body{
 .formulario{
     background-color: #ffffff;
     padding: 20px;
+    width: 50%;
+    text-align: center;
 }
 
 input{
@@ -43,7 +51,8 @@ input{
 }
 
 .formulario p{
-    padding: 10px 0 10px;
+    padding: 10px 0 10px 20px;
+    text-align: left;
 }
 
 .formulario .botao{
@@ -52,4 +61,8 @@ input{
     border-radius: 5px;
     border-style: none;
     background-color: #3ccc87;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
