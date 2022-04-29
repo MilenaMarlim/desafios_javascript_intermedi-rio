@@ -24,22 +24,39 @@
 
         <section class="formulario">
 
-            <form method="GET" action="index.html" enctype="multipart/form-data">
+            <form method="GET" id="form" action="index.html" enctype="multipart/form-data">
+                
+                <div class="form_control">
+                    <input type="text" id="nome" name="nome" placeholder=" Nome completo*">
 
-                <input type="text" id="nome" name="nome" placeholder=" Nome completo*">
-                <p class="mensagem_erro">campo obrigatório</p> <br>
-                <input type="email" id="email" placeholder=" Email*">
-                <p class="mensagem_erro">campo obrigatório</p> <br>
-                <input type="number" placeholder=" Telefone*">
-                <p class="mensagem_erro">campo obrigatório</p> <br>
-                <textarea name="mensagem" cols="38" rows="5" placeholder=" Mensagem*"></textarea>
-                <p class="mensagem_erro">campo obrigatório</p> <br>
+                    <p class="mensagem_erro">campo obrigatório</p> 
+                </div>
+
+                <div class="form_control">
+                    <input type="email" id="email" placeholder=" Email*">
+
+                    <p class="mensagem_erro">campo obrigatório</p> 
+                </div>
+
+                <div class="form_control">
+                    <input type="number" id="telefone" placeholder=" Telefone*">
+
+                    <p class="mensagem_erro">campo obrigatório</p> 
+                </div>
+
+                <div class="form_control">
+                    <textarea name="mensagem" id="mensagem" cols="38" rows="5" placeholder=" Mensagem*"></textarea>
+                    <p class="mensagem_erro">campo obrigatório</p> 
+                </div>
+
                 <p>*campos obrigatórios</p>
-                <button class="botao">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>
         </section>
     </main>
 
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
